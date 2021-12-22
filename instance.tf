@@ -76,7 +76,7 @@ resource "null_resource" "vm_node_init" {
         "chmod +x /tmp/installexec.sh",
         "echo installing",
         "/tmp/installexec.sh",
-        "chmod +R 777 /opt/appdynamics/zeroagent/agents/java/javaagent/ver21.5.0.32605/lib",
+        "chmod -R 777 /opt/appdynamics/zeroagent/agents/java/javaagent/ver21.5.0.32605/lib",
     ]
     connection {
       type = "ssh"
